@@ -6,7 +6,6 @@
 --Very-dark-cyan: hsl(179, 100%, 13%);
 
 
-
 /*  (paragraphs) */
 --Transparent-white: hsla(0, 0%, 100%, 0.75);
 
@@ -22,6 +21,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend Deca", sans-serif;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--Very-light-gray);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    width: 62.5rem;
+    height: 33rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+section {
+    padding: 3rem;
+}
+
+
+.card1{
+    background: var(--Bright-orange);
+}
+.card2{
+    background: var(--Dark-cyan);
+}
+.card3{
+    background: var(--Very-dark-cyan);
+}
+
+.image {
+    /* padding-bottom: 2rem; */
+}
+
+.title {
     font-family: "Big Shoulders", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    padding: 2rem 0;
+}
+
+.desc {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    color: var(--Transparent-white);
+    margin-bottom: 5rem;
+}
+
+.btn {
+    outline: none;
+    border: solid 0.2rem transparent;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: var(--Very-light-gray);
+}
+
+.btn:hover {
+    background: transparent;
+    border: solid 0.2rem ;
+}
+
+.card1 .btn {
+    color: var(--Bright-orange);
+}
+
+.card2 .btn {
+    color: var(--Dark-cyan);
+}
+
+.card3 .btn {
+    color: var(--Very-dark-cyan);
+}
+
+
+.card1 .btn:hover,
+.card2 .btn:hover,
+.card3 .btn:hover {
+    color: var(--Transparent-white);
 }
