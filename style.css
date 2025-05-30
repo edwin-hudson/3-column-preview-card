@@ -90,7 +90,7 @@ section {
 .btn {
     outline: none;
     border: solid 0.2rem transparent;
-    padding: 1rem 2.5rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 2rem;
     font-family: "Lexend Deca", sans-serif;
     font-size: 1.2rem;
@@ -120,4 +120,25 @@ section {
 .card2 .btn:hover,
 .card3 .btn:hover {
     color: var(--Transparent-white);
+}
+
+@media screen and (max-width: 48rem) {
+    main {
+        /* width: 90%; */
+        position: relative;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+         top: 0; 
+        width: 20rem;
+        height: 90rem;
+         /* padding: 2rem;  */
+}
+
+    section {
+        padding: 2rem;
+    }
 }
